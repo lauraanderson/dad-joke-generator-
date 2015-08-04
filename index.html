@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dad Joke Generator</title>
+
+	<!-- responsive -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- favicon -->
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+	<!-- loading fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Lilita+One|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+	<!-- loading css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- modernizr -->
+	<script src="js/modernizr.js"></script>
+
+
+</head>
+<body>
+	
+	<header>
+		<h1 class="stroke">Dad Joke Generator</h1>
+		<h2>Need a dad joke? Don’t worry... we’ve got you covered.</h2>
+	</header>
+
+	<div class="wrapper">
+		<div class="dadForm">
+			<form>
+				<div class="question question1 clearfix">
+					<h3>What type of dad joke do you want?</h3>
+					<div class="answerWrapper answerWrapper1">
+						<input id="puns" type="radio" name="jokeType" value="puns">
+							<label for="puns">Punny dad</label>
+					</div>
+					<div class="answerWrapper answerWrapper2">
+						<input id="tech" type="radio" name="jokeType" value="tech">
+							<label for="tech">Tech dad</label>
+					</div>
+					<div class="answerWrapper answerWrapper3">
+						<input id="food" type="radio" name="jokeType" value="food">
+							<label for="food">Foodie dad</label>
+					</div>
+					<div class="answerWrapper answerWrapper4">
+						<input id="bar" type="radio" name="jokeType" value="bar">
+							<label for="bar">"A dad walked into a bar..."</label>
+					</div>
+				</div> <!-- /.end of question1 -->
+				<div class="question question2 clearfix">
+					<h3>How bad do you want it to be?</h3>
+						<div class="answerWrapper">
+							<input id="good" type="radio" name="jokeStrength" value="good">
+								<label for="good">Good</label>
+						</div>
+						<div class="answerWrapper">
+							<input id="bad" type="radio" name="jokeStrength" value="bad">
+								<label for="bad">Bad</label>
+						</div>
+						<div class="answerWrapper">
+							<input id="dad" type="radio" name="jokeStrength" value="dad">
+								<label for="dad">Dad</label>
+						</div>
+				</div> <!-- /.end of question2 -->
+				<div class="jokeButton">
+					<input type="submit" class="submitJoke" value="Let's hear it !">
+				</div>
+				<div class="resetButton displayNone">
+					<a href="index.html" class="submitReset">Start again</a>
+				</div>
+			</form>
+		</div> <!-- end of dad form -->
+
+		<div class="dadJoke absolute hide">
+			<!-- this is where the jokes go! -->
+		</div>
+
+	</div> <!-- end of wrapper -->
+
+	<footer>
+		<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://dadjokes.club" data-text="Need a dad joke? This dad joke generator has you covered:" data-size="large" data-count="none">Tweet</a>
+
+		<p>&copy; <a href="https://twitter.com/lauraand_"target="_blank">Laura Anderson</a> &amp; <a href="https://twitter.com/vesjocic"target="_blank">Vesna Jocic</a> 2015</p>
+	</footer>
+
+	<!-- loading main js file -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src = "js/main.js"></script>
+
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+</body>
+</html>
